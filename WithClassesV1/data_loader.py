@@ -1,6 +1,6 @@
 import csv
 import os
-from parts_of_speech import Pronoun, Noun, Verb, PersonalPronoun, DemonstrativePronoun
+from parts_of_speech import Noun, Verb, PersonalPronoun, DemonstrativePronoun
 
 
 def read_csv(file_path):

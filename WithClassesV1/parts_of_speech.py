@@ -11,14 +11,6 @@ class Pronoun:
         self.number = number
         self.pronoun_type = pronoun_type
 
-    @staticmethod
-    def get_personal_pronouns(pronouns):
-        return [p for p in pronouns if p.pronoun_type == 'personal']
-
-    @staticmethod
-    def get_demonstrative_pronouns(pronouns):
-        return [p for p in pronouns if p.pronoun_type == 'demonstrative']
-
 
 class PersonalPronoun(Pronoun):
     def __init__(self, pronoun, number, pronoun_type, person, case):
