@@ -2,6 +2,7 @@ import csv
 import os
 from parts_of_speech import Pronoun, Noun, Verb, PersonalPronoun, DemonstrativePronoun
 
+
 def read_csv(file_path):
     if not os.path.exists(file_path):
         print(f"Error: File {file_path} does not exist.")
@@ -13,6 +14,7 @@ def read_csv(file_path):
     except Exception as e:
         print(f"Error reading {file_path}: {e}")
         return []
+
 
 class PartsOfSpeech:
     def __init__(self, personal_pronouns, demonstrative_pronouns, verbs, nouns):

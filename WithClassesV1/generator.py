@@ -20,8 +20,10 @@ PERSONS = ["first", "second", "third"]
 
 NUMBER = ["singular", "plural"]
 
+
 def select_personal_pronoun_by_person_and_number(pronouns, person, number):
     return [p for p in pronouns if p.person == person and p.number == number]
+
 
 def select_non_auxiliary_verbs(verbs):
     return [verb for verb in verbs if verb.type != "auxiliary"]
@@ -30,8 +32,10 @@ def select_non_auxiliary_verbs(verbs):
 def needs_auxiliary_verbs(tense):
     return "simple" not in tense
 
+
 def get_demonstrative_pronoun_by_number_and_random_distance(demonstrative_pronouns, number):
     return random.choice([d for d in demonstrative_pronouns if d.number == number])
+
 
 def select_correct_verb_form(verb, tense, person, number):
     if "progressive" in tense:
@@ -49,6 +53,7 @@ def select_correct_verb_form(verb, tense, person, number):
         return verb.past
 
     return verb.base_form
+
 
 def get_auxiliary_verbs(tense, person, number):
     if tense == "simple_present":
@@ -106,7 +111,8 @@ class SimpleSentence(Sentence):
         self.is_progressive = "progressive" in tense
 
     def __str__(self):
-        demostrative_pronouns = get_demonstrative_pronoun_by_number_and_random_distance(self.demonstrative_pronouns, self.object_number)
+        demostrative_pronouns = get_demonstrative_pronoun_by_number_and_random_distance(self.demonstrative_pronouns,
+                                                                                        self.object_number)
         obj = self.object.noun_singular if self.object_number == "singular" else self.object.noun_plural
 
         verb = select_correct_verb_form(self.verb, self.tense, self.subject_type, self.object_number)
@@ -149,7 +155,8 @@ def main():
     person = random.choice(PERSONS)
     object_number = random.choice(NUMBER)
 
-    subject = random.choice(select_personal_pronoun_by_person_and_number(parts_of_speech.personal_pronouns, person, object_number))
+    subject = random.choice(
+        select_personal_pronoun_by_person_and_number(parts_of_speech.personal_pronouns, person, object_number))
     verb = random.choice(select_non_auxiliary_verbs(parts_of_speech.verbs))
     noun = random.choice(parts_of_speech.nouns)
 
