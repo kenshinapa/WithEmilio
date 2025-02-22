@@ -1,0 +1,22 @@
+base_form,present_first_person,present_second_person,present_third_person,past,past_participle,progressive,type,category
+will,will,will,will,will,will,will be,irregular,auxiliary
+be,am,are,is,was,been,being,irregular,auxiliary
+call,call,call,calls,called,called,calling,regular,verb
+come,come,come,comes,came,come,coming,irregular,verb
+do,do,do,does,did,done,doing,irregular,auxiliary
+find,find,find,finds,found,found,finding,irregular,verb
+give,give,give,gives,gave,given,giving,irregular,verb
+go,go,go,goes,went,gone,going,irregular,verb
+have,have,have,has,had,had,having,irregular,auxiliary
+jump,jump,jump,jumps,jumped,jumped,jumping,regular,verb
+know,know,know,knows,knew,known,knowing,irregular,verb
+love,love,love,loves,loved,loved,loving,regular,verb
+make,make,make,makes,made,made,making,irregular,verb
+say,say,say,says,said,said,saying,irregular,verb
+see,see,see,sees,saw,seen,seeing,irregular,verb
+take,take,take,takes,took,taken,taking,irregular,verb
+think,think,think,thinks,thought,thought,thinking,irregular,verb
+use,use,use,uses,used,used,using,regular,verb
+want,want,want,wants,wanted,wanted, wanting,regular,verb
+wash,wash,wash,washes,washed,washed,washing,regular,verb
+work,work,work,works,worked,worked,working,regular,verb

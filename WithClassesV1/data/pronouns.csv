@@ -1,0 +1,13 @@
+pronoun,number,pronoun_type,person,case,distance
+I,singular,personal,first,nominative,
+you,singular,personal,second,nominative,
+he,singular,personal,third,nominative,
+she,singular,personal,third,nominative,
+it,singular,personal,third,nominative,
+we,plural,personal,first,nominative,
+you,plural,personal,second,nominative,
+they,plural,personal,third,nominative,
+this,singular,demonstrative,,,near
+that,singular,demonstrative,,,far
+these,plural,demonstrative,,,near
+those,plural,demonstrative,,,far
