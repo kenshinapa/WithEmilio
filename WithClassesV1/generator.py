@@ -132,6 +132,19 @@ class SimpleSentence(Sentence):
 def main():
     parts_of_speech = PartsOfSpeech.load_data()
 
+    if not parts_of_speech.personal_pronouns:
+        print("Error: No personal pronouns loaded.")
+        return
+    if not parts_of_speech.verbs:
+        print("Error: No verbs loaded.")
+        return
+    if not parts_of_speech.nouns:
+        print("Error: No nouns loaded.")
+        return
+    if not parts_of_speech.demonstrative_pronouns:
+        print("Error: No demonstrative pronouns loaded.")
+        return
+
     tense = random.choice(TENSE_DENOMINATIONS)
     person = random.choice(PERSONS)
     object_number = random.choice(NUMBER)
