@@ -1,5 +1,5 @@
 import random
-from data_loader import PartsOfSpeech
+from data_loader import load_data
 
 # Examples of sentences per tense denomination
 # Simple present: I eat pizza
@@ -136,7 +136,7 @@ class SimpleSentence(Sentence):
 
 
 def main():
-    parts_of_speech = PartsOfSpeech.load_data()
+    parts_of_speech = load_data()
 
     if not parts_of_speech.personal_pronouns:
         print("Error: No personal pronouns loaded.")
