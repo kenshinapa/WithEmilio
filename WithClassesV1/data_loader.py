@@ -1,5 +1,6 @@
 import csv
 import os
+
 from parts_of_speech import Noun, Verb, PersonalPronoun, DemonstrativePronoun
 
 
@@ -22,6 +23,7 @@ class PartsOfSpeech:
         self.demonstrative_pronouns = demonstrative_pronouns
         self.verbs = verbs
         self.nouns = nouns
+
 
 def load_data():
     base_path = os.path.dirname(__file__)
