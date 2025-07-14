@@ -1,4 +1,5 @@
 import random
+
 from data_loader import load_data
 
 # Examples of sentences per tense denomination
